@@ -3,7 +3,7 @@ package gr.aueb.cf.ch1;
 /**
  * Task 3: A simple addition and println app
  *
- * @author kleid
+ * @author klei
  */
 public class AddApp {
     public static void main(String[] args) {
