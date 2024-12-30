@@ -8,6 +8,7 @@ public class MaxParkedCarsApp {
         int[][] arr = {{1012, 1136}, {1317, 1417}, {1015, 1020}};
         int max = getMaxParkedCarsAtGivenMoment(arr);
         System.out.println("The maximum amount of parked cars is: " + max);
+
     }
 
     public static int getMaxParkedCarsAtGivenMoment(int[][] array) {
@@ -40,13 +41,6 @@ public class MaxParkedCarsApp {
 //                }
 //            }
 //        }
-
-        for (int[] row : arrivalsAndDepartures) {
-            for (int el : row) {
-                System.out.print(el + " ");
-            }
-        }
-        System.out.println();
 
         for (int i = 0; i < array.length; i++) {
             if (arrivalsAndDepartures[i][1] == 1) {
