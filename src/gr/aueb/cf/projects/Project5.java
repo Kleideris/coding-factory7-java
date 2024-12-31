@@ -1,4 +1,4 @@
-package gr.aueb.cf.challenges.tasks10;
+package gr.aueb.cf.projects;
 
 /**
  * Project 5: A theater management class that provides a book and a cancel method to manage
