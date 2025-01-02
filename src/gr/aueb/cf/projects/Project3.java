@@ -3,6 +3,10 @@ package gr.aueb.cf.projects;
 import java.io.*;
 import java.util.Arrays;
 
+/**
+ * Reads the characters of a file ignoring whitespaces, and then outputs statistical
+ * data of their frequency first ordered by character and then by frequency
+ */
 public class Project3 {
 
     public static void main(String[] args) {
