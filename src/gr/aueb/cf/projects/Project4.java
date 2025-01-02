@@ -222,5 +222,4 @@ public class Project4 {
     }
 }
 
-//todo:
-// restrict players from using the other symbol.
+//todo: add option to surrender with q.
