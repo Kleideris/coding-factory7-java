@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * Game of tic-tac-toe.
+ *
+ * @author klei
  */
 public class Project4 {
     public static String[][] board = new String[3][3];
