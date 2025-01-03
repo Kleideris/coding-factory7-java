@@ -75,5 +75,3 @@ public class Project3 {
         }
     }
 }
-
-//todo: make the data appear side to side.

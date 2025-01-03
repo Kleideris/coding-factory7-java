@@ -12,11 +12,11 @@ public class Project4 {
     public static Scanner in = new Scanner(System.in);
     public static int round = 0;
     public static int players = 2;
+    public static boolean[] surrenderEnabled = new boolean[1];
 
     public static void main(String[] args) {
         boolean gameOver = false;
         String moveInput = " ";
-
 
         emptyBoard();
         System.out.println("Game Start\n");
@@ -27,7 +27,9 @@ public class Project4 {
             players = decidePlayer(players);
             System.out.printf("Player %d: ", players);
 
-            System.out.println("Choose a square:");
+            System.out.print("Choose a square:");
+            enableSurrenderButton();                    //comment this code if you want to remove the surrender option!
+
             String chosenSquare = getPosition();
 
             if (round == 1) {
@@ -94,9 +96,20 @@ public class Project4 {
     }
 
     public static String getPosition() {
+        System.out.println();
         while (true) {
             String chosenSquare = in.nextLine();
-            if (chosenSquare.length() != 2) {
+
+            //optional surrender early code
+            if (surrenderEnabled[0] && chosenSquare.length() == 1 && chosenSquare.charAt(0) == 'q'){
+                int player = (round % 2 == 0) ? 2 : 1;
+                System.out.printf("Player %d, Surrendered,\n", player);
+                printWinMessage(round);
+                System.out.println("Thanks for playing!");
+                System.exit(0);
+            }
+
+            if (chosenSquare.length() != 2 ) {
                 System.out.println("Square position must be one of: \"A1\"-\"C3\" squares");
                 continue;
             }
@@ -219,9 +232,15 @@ public class Project4 {
     }
 
     public static void printWinMessage(int round) {
-        int player = (round + 1) % 2;
+        int player = (round % 2 == 0) ? 1 : 2;
         System.out.printf("Player: %d, Won the game!!\n\n", player);
     }
-}
 
-//todo: add option to surrender with q.
+    public static void enableSurrenderButton() {
+         surrenderEnabled[0] = true;
+
+
+        System.out.print("        (...q to surrender)\n");
+
+    }
+}

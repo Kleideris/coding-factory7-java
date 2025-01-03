@@ -69,8 +69,3 @@ public class Project5 {
         return theaterSeats[column - 'A'][row - 1];
     }
 }
-
-
-// todo:
-//  public static void loadBookedSeatsFromFile() {}
-//  public static void saveBookedSeatsToFile() {}
