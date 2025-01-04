@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Project 1: Reads 6-49 integers from a file that contains numbers from 1 up to 49, sorts them, produces
+ * Reads 6-49 integers from a file that contains numbers from 1 up to 49, sorts them, produces
  * every possible six digit combination, filters the results according to 5 criteria and prints
  * the combinations to a .txt file
  *
@@ -17,9 +17,8 @@ import java.util.Scanner;
 public class Project1 {
 
     public static void main(String[] args) {
-        File fileInput = new File("C:/tmp/project1File.txt");
+        File fileInput = new File("C:/tmp/project1_File.txt");
         File fileOutput = new File("C:/tmp/project1_Combinations_Output.txt");
-
         int count;
 
         try(Scanner scanner = new Scanner(fileInput);
@@ -93,11 +92,13 @@ public class Project1 {
             System.out.println("Combinations created successfully, and stored in: " + fileOutput);
 
         } catch (IOException e) {
+
             if (!fileOutput.exists()) {
                 System.err.println("The specified path: " + fileOutput + " for the file output does not exist.");
                 System.err.println("Please create the path and try again.");
                 System.exit(1);
             }
+
             System.err.println("An error occurred when trying to read the file. Please try again.");
         }
     }
@@ -140,6 +141,7 @@ public class Project1 {
                 break;
             }
         }
+
         return hasUniqueNumbers;
     }
 

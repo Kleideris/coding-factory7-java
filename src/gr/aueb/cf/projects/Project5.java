@@ -1,7 +1,7 @@
 package gr.aueb.cf.projects;
 
 /**
- * Project 5: A theater management class that provides a book and a cancel method to manage
+ * A theater management class that provides a book and a cancel method to manage
  * a 30 x 12 theater. The methods check for the validity of the seat and if they are booked beforehand.
  *
  * @author klei
@@ -13,16 +13,19 @@ public class Project5 {
 
         //Book a seat
         book('C', 2);
+
         //Trying to book an already booked seat
         book('C', 2);
 
         //cancel a booked seat
         cancel('C', 2);
+
         //trying to cancel an unbooked seat
         cancel('C', 2);
 
         //invalid seat booking
         book('A', 31);
+
         //invalid seat canceling
         cancel('Z', 12);
     }

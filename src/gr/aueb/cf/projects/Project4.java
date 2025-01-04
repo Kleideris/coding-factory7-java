@@ -3,7 +3,7 @@ package gr.aueb.cf.projects;
 import java.util.Scanner;
 
 /**
- * Game of tic-tac-toe.
+ * Simple game of tic-tac-toe.
  *
  * @author klei
  */
@@ -97,6 +97,7 @@ public class Project4 {
 
     public static String getPosition() {
         System.out.println();
+
         while (true) {
             String chosenSquare = in.nextLine();
 
@@ -133,6 +134,7 @@ public class Project4 {
                 System.out.println("The square " + chosenSquare + " is full.. Please choose an empty square:");
                 continue;
             }
+
             return chosenSquare;
         }
     }
@@ -205,6 +207,7 @@ public class Project4 {
 
         //diagonal win checks:
         xSymbols = 0; oSymbols = 0;
+
         for (int i = 0; i < 3; i++) {
             if (board[i][i].equals("X")) {
                 xSymbols++;
@@ -217,6 +220,7 @@ public class Project4 {
         }
 
         xSymbols = 0; oSymbols = 0;
+
         for (int i = 0; i < 3; i++) {
             if (board[2 - i][i].equals("X")) {
                 xSymbols++;
@@ -238,9 +242,6 @@ public class Project4 {
 
     public static void enableSurrenderButton() {
          surrenderEnabled[0] = true;
-
-
         System.out.print("        (...q to surrender)\n");
-
     }
 }

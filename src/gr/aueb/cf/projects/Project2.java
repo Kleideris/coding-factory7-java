@@ -2,7 +2,9 @@ package gr.aueb.cf.projects;
 
 /**
  * Calculates the maximum sum sub-array of the given array at time complexity O(n)
- * (Also known as Kadane's Algorithm for the maximum sub-array problem)
+ * (Also known as "Kadane's Algorithm" or "maximum sub-array problem").
+ *
+ * @author klei
  */
 public class Project2 {
 
@@ -30,12 +32,13 @@ public class Project2 {
             }
         }
 
-        printSubArray(array, maxSubArray, endIndex, subElements);
+        printSubArray(array, endIndex, subElements);
         printSubArrayMax(maxSubArray);
     }
 
-    public static void printSubArray(int[] array, int maxSubArray, int endIndex, int subElements) {
+    public static void printSubArray(int[] array, int endIndex, int subElements) {
         System.out.print("Max Sub-array: {");
+
         for (int i = endIndex - subElements; i <= endIndex; i++) {
             System.out.print(array[i]);
 
@@ -48,6 +51,6 @@ public class Project2 {
     }
 
     public static void printSubArrayMax(int maxSubArray) {
-        System.out.println("   ,   Max Sub-array Sum: " + maxSubArray);
+        System.out.println("   ,   Max Sub-array's Sum: " + maxSubArray);
     }
 }

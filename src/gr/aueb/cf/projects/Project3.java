@@ -2,10 +2,11 @@ package gr.aueb.cf.projects;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Reads the characters of a file ignoring whitespaces, and then outputs statistical
- * data of their frequency first ordered by character and then by frequency
+ * data of their frequency, first ordered by character and then by frequency.
  *
  * @author klei
  */
@@ -65,7 +66,7 @@ public class Project3 {
         }
 
         System.out.println("\n\nStatistical data of characters, arranged by character:\n");
-        Arrays.sort(characterFrequency, 0, endOfArray, (a, b) -> Integer.compare(a[0], b[0]));
+        Arrays.sort(characterFrequency, 0, endOfArray, Comparator.comparingInt(a -> a[0]));
 
         for (int i = 0; i < endOfArray; i++) {
             character = (char) characterFrequency[i][0];
