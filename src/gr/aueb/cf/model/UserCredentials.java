@@ -1,9 +1,9 @@
 package gr.aueb.cf.model;
 
 public class UserCredentials {
-    long id;
-    String firstname;
-    String lastname;
+    private long id;
+    private String firstname;
+    private String lastname;
 
     public UserCredentials() {
     }
