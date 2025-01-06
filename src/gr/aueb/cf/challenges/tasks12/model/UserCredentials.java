@@ -1,4 +1,4 @@
-package gr.aueb.cf.model;
+package gr.aueb.cf.challenges.tasks12.model;
 
 public class UserCredentials {
     private long id;

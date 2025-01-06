@@ -1,4 +1,4 @@
-package gr.aueb.cf.model.PointXYZ;
+package gr.aueb.cf.challenges.Tasks13.pointapp;
 
 public class Main {
 
