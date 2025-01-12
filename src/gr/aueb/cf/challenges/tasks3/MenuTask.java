@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * Displays a menu with 5 choices and gives feedback
  * for every choice selected.
+ *
+ * @author klei
  */
 public class MenuTask {
 

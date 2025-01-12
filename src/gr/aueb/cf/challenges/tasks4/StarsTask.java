@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * Prints out stars according to a number n and the users preferences.
+ *
+ * @author klei
  */
 public class StarsTask {
 

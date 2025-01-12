@@ -1,7 +1,9 @@
 package gr.aueb.cf.challenges.tasks5;
 
 /**
- * Lots of methods
+ * Lots of methods.
+ *
+ * @author klei
  */
 public class ManyMethods {
 

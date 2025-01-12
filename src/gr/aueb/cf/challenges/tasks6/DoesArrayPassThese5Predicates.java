@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * Checks if an array passes 5 predicates.
+ *
+ * @author klei
  */
 public class DoesArrayPassThese5Predicates {
 

@@ -2,31 +2,34 @@ package gr.aueb.cf.challenges.tasks7;
 
 /**
  * Replaces every char of a string with his next char in the ASCII code.
+ *
+ * @author klei
  */
 public class EncryptionApp {
 
     public static void main(String[] args) {
-        String s = "Μήνυμα για κρυπτογράφηση..";
+        String message = "Μήνυμα για αποκρυπτογράφηση..";
+        String encryptedMessage;
 
-        encrypt(s);
-        System.out.println("Encrypted message: " + s);
+        System.out.println("Original message: " + message);
+        System.out.println();
 
-//        decrypt(s);
-//        System.out.println("Decrypted message: " + s);
+        encryptedMessage = encrypt(message);
+        System.out.println("Encrypted message: " + encryptedMessage);
     }
 
-    public static void encrypt(String message) {
-        int alteredCh;
-        StringBuilder sb = new StringBuilder();
+    public static String encrypt(String message) {
+        char alteredChar;
+        StringBuilder encryptedMessage = new StringBuilder();
 
         for (int i = 0; i < message.length(); i++) {
-            alteredCh = (char) ((int) message.charAt(i) + 1);
-            sb.append(alteredCh);
-            message = message.valueOf(sb);
+            alteredChar = message.charAt(i);
+            alteredChar++;
+            encryptedMessage.append(alteredChar);
         }
+
+        return String.valueOf(encryptedMessage);
     }
 
-    public static void decrypt(String message) {
-
-    }
+    //todo: let spaces as is in the encrypted message..
 }

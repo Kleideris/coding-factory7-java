@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * Prints menu with choices on how to print stars and then executes the choice.
  * Is made with the use of functions.
+ *
+ * @author klei
  */
 public class StarsApp {
     static Scanner scanner = new Scanner(System.in);

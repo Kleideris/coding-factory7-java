@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * Calculates whether a year is a leap year or not.
+ *
+ * @author klei
  */
 public class LeapYearTask {
 
