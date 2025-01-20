@@ -1,4 +1,4 @@
-package gr.aueb.cf.challenges.Tasks13.pointapp;
+package gr.aueb.cf.challenges.tasks13.pointapp;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package gr.aueb.cf.challenges.Tasks13.bankapp.model;
+package gr.aueb.cf.challenges.tasks13.bankapp.model;
 
 /**
  * An account class that allows the creation of a joint account that is owned by 2 customers.

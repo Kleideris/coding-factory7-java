@@ -1,5 +1,5 @@
 ### IntelliJ IDEA ###
 out/
 .idea/
-src/gr/aueb/cf/testbed
+src/gr/aueb/cf/tests
 CF7-Testbed.iml

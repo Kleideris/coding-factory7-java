@@ -1,4 +1,4 @@
-package gr.aueb.cf.challenges.Tasks13.pointapp;
+package gr.aueb.cf.challenges.tasks13.pointapp;
 
 /**
  * The point class represents <i>points</i> in 3d space where <b>x</b> , <b>y</b> and <b>z</b>

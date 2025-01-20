@@ -1,7 +1,7 @@
-package gr.aueb.cf.challenges.Tasks13.bankapp;
+package gr.aueb.cf.challenges.tasks13.bankapp;
 
-import gr.aueb.cf.challenges.Tasks13.bankapp.model.JointAccount;
-import gr.aueb.cf.challenges.Tasks13.bankapp.model.OverDraftAccount;
+import gr.aueb.cf.challenges.tasks13.bankapp.model.JointAccount;
+import gr.aueb.cf.challenges.tasks13.bankapp.model.OverDraftAccount;
 
 public class Main {
 

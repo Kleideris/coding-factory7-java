@@ -1,4 +1,4 @@
-package gr.aueb.cf.challenges.Tasks13.bankapp.model;
+package gr.aueb.cf.challenges.tasks13.bankapp.model;
 
 /**
  * An account app that allows the  withdrawal of amounts that are more than the account balance,
