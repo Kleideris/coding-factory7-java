@@ -1,13 +1,13 @@
 package gr.aueb.cf.challenges.tasks8;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
  * printMenu and getChoice methods error handling
+ *
+ * @author klei
  */
-public class PrintMenuAndGetChoiceMethods {
-    static Scanner in = new Scanner(System.in);
+public class ExceptionsApp {
 
     public static void main(String[] args) {
         int choice;
@@ -34,7 +34,8 @@ public class PrintMenuAndGetChoiceMethods {
         System.out.println("5 - Exit");
     }
 
-    public static int getChoice() throws IllegalArgumentException {
+    public static int getChoice() {
+        Scanner in = new Scanner(System.in);
         int choice;
 
         while (!in.hasNextInt()) {
@@ -42,13 +43,9 @@ public class PrintMenuAndGetChoiceMethods {
             in.nextLine();
         }
         choice = in.nextInt();
-        in.nextLine();
-
-
         if (!choiceIsValid(choice)) {
-            throw new IllegalArgumentException("Error. Choice: " + choice + "\nChoice must be between 1-5\n");
+            throw new IllegalArgumentException("Error. Choice: " + choice + ", Choice must be between 1-5\n");
         }
-
         return choice;
     }
 
