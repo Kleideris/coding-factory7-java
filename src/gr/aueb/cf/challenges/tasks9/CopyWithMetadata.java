@@ -38,9 +38,9 @@ public class CopyWithMetadata {
             int dotIndex = inputFile.lastIndexOf(".");
             extension = inputFile.substring(++dotIndex);
             System.out.println("Extension: " + extension);
-
+            System.out.println("File copied successfully!");
         } catch (IOException e) {
-            System.err.println("Error: Failed to copy the file. " + e.getMessage());
+            System.err.println("Failed to copy the file. " + e.getMessage());
         }
 
     }
