@@ -1,12 +1,10 @@
 package gr.aueb.cf.ch10;
 
-import java.util.Locale;
-
 /**
  * Transforms to Uppercase-lowercase.
  * For instance, Athens becomes AtHeNs.
  */
-public class UUpperLowerCaseApp {
+public class UpperLowerCaseApp {
 
     public static void main(String[] args) {
         String message = "ATHENS";

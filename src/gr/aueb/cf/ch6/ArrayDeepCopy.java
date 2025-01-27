@@ -1,7 +1,5 @@
 package gr.aueb.cf.ch6;
 
-import java.util.Arrays;
-
 /**
  *
  */

@@ -1,6 +1,5 @@
 package gr.aueb.cf.ch9;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;

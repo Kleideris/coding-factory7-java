@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch1__introduction_in_java;
+package gr.aueb.cf.ch1;
 
 public class Test {
 

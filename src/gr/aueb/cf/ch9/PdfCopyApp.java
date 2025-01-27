@@ -2,7 +2,6 @@ package gr.aueb.cf.ch9;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 
 /**
