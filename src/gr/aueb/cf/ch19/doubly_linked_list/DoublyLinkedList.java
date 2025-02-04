@@ -39,4 +39,70 @@ public class DoublyLinkedList<T> {
         tail.setNext(tmp);
         tail = tmp;
     }
+
+    /**
+     * Time-complexity O(1)
+     * @return the removed node.
+     */
+    public Node<T> removeFirst() {
+        Node<T> nodeToReturn;
+
+        if(isEmpty()) return null;
+
+        nodeToReturn = head;
+        if (head.getNext() == null) tail = null;
+        head = head.getNext();
+        head.setPrev(null);
+        return nodeToReturn;
+    }
+
+    /**
+     * Time-complexity O(1)
+     * @return the removed node.
+     */
+    public Node<T> removeLast() {
+        Node<T> nodeToReturn;
+        if (isEmpty() || head.getNext() == null) {
+            return removeFirst();
+        }
+
+        nodeToReturn = tail;
+        tail = tail.getPrev();
+        tail.setNext(null);
+        return nodeToReturn;
+    }
+
+    public Node<T> get(T t) {
+        Node<T> nodeToReturn = null;
+
+        for (Node<T> n = head; n != null; n = n.getNext()) {
+            if (n.getItem().equals(t)) {
+                nodeToReturn = n;
+                break;
+            }
+        }
+        return nodeToReturn;
+    }
+
+    /**
+     * Time-complexity O(n)
+     */
+    public void traverse() {
+        for (Node<T> n = head; n != null; n = n.getNext()) {
+            System.out.println(n.getItem());
+        }
+    }
+
+    /**
+     * Time-complexity O(n)
+     */
+    public void traverseReverse() {
+        for (Node<T> n = tail; n != null; n = n.getPrev()) {
+            System.out.println(n.getItem());
+        }
+    }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
 }
