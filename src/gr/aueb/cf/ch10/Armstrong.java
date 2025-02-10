@@ -14,7 +14,6 @@ public class Armstrong {
         int numberOfDigits = 0;
         int originalNum = 0;
         int digit = 0;
-        int copyOfNum = 0;
 
 
 
@@ -30,40 +29,5 @@ public class Armstrong {
         }
 
         System.out.printf("%d%s Armstrong", originalNum, (sum == originalNum) ? " is" : " is not");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        todo na ta elegksw sto spiti
-
-//        do {
-//            numberOfDigits++;
-//            copyOfNum /= 10;
-//        } while (copyOfNum > 0);
-//
-//        int[] sums = new int[numberOfDigits];
-//        copyOfNum = num;
-//        int Armstrong = 0;
-//        boolean isArmstrong = false;
-//
-//        for (int i = 0; i < sums.length; i++) {
-//            sums[i] = (copyOfNum % 10) ^ numberOfDigits;
-//            copyOfNum /= 10;
-//            Armstrong += sums[i];
-//        }
-//
-//        if (Armstrong == num) isArmstrong = true;
-
-
     }
 }
